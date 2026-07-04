@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preflop Trainer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div class="hero-copy-wrap">
+          <p class="eyebrow">Texas Hold'em Lab</p>
+          <h1>Preflop Trainer</h1>
+          <p class="hero-copy">
+            Alterne entre 6-max e 9-max, escolha o spot e treine pre-flop com
+            estatisticas separadas para cada formato de mesa.
+          </p>
+        </div>
+
+        <div class="hero-orbit">
+          <div class="orbit-ring orbit-ring-one"></div>
+          <div class="orbit-ring orbit-ring-two"></div>
+          <div class="orbit-core">
+            <span id="heroModeBadge">Open Raise</span>
+            <strong id="heroAccuracyBadge">0%</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel control-deck">
+        <div>
+          <span class="label">Mesa</span>
+          <select id="tableSizeFilter">
+            <option value="6">6-max</option>
+            <option value="9">9-max</option>
+          </select>
+        </div>
+
+        <div>
+          <span class="label">Modo</span>
+          <select id="modeFilter">
+            <option value="OPEN">Open Raise</option>
+            <option value="VS_RAISE">Vs Raise</option>
+            <option value="VS_3BET">Vs 3-Bet</option>
+          </select>
+        </div>
+
+        <div>
+          <span class="label">Stack</span>
+          <select id="stackProfileFilter">
+            <option value="SHORT">20-40bb</option>
+            <option value="STANDARD">80-120bb</option>
+            <option value="DEEP">150bb+</option>
+          </select>
+        </div>
+
+        <div>
+          <span class="label">Posicao do hero</span>
+          <select id="positionFilter"></select>
+        </div>
+
+        <div>
+          <span class="label">Grupo de maos</span>
+          <select id="handGroupFilter">
+            <option value="ALL">Todas</option>
+            <option value="PREMIUM">Premium</option>
+            <option value="BROADWAY">Broadway</option>
+            <option value="POCKET_PAIR">Pocket pairs</option>
+            <option value="SUITED_CONNECTOR">Suited connectors</option>
+            <option value="AX_SUITED">Ax suited</option>
+            <option value="WEAK_OFFSUIT">Offsuit fracas</option>
+          </select>
+        </div>
+
+        <div class="filter-actions">
+          <button class="secondary" id="newHandButton">Nova mao</button>
+          <button class="ghost" id="resetStatsButton">Resetar stats</button>
+        </div>
+      </section>
+
+      <section class="spot-strip">
+        <article class="spot-chip">
+          <span class="chip-label">Spot atual</span>
+          <strong id="spotTitle">Hero em UTG abrindo</strong>
+        </article>
+        <article class="spot-chip">
+          <span class="chip-label">Mesa</span>
+          <strong id="tableSizeLabel">6-max</strong>
+        </article>
+        <article class="spot-chip">
+          <span class="chip-label">Stack</span>
+          <strong id="stackProfileLabel">80-120bb</strong>
+        </article>
+        <article class="spot-chip">
+          <span class="chip-label">Vilao</span>
+          <strong id="villainLabel">Sem acao previa</strong>
+        </article>
+        <article class="spot-chip">
+          <span class="chip-label">Acoes</span>
+          <strong id="actionLegend">Raise / Call / Fold</strong>
+        </article>
+      </section>
+
+      <section class="table-layout">
+        <div class="table-surface">
+          <div class="seat seat-utg" data-seat="UTG">UTG</div>
+          <div class="seat seat-utg1" data-seat="UTG1">UTG+1</div>
+          <div class="seat seat-mp" data-seat="MP">MP</div>
+          <div class="seat seat-lj" data-seat="LJ">LJ</div>
+          <div class="seat seat-hj" data-seat="HJ">HJ</div>
+          <div class="seat seat-co" data-seat="CO">CO</div>
+          <div class="seat seat-btn" data-seat="BTN">BTN</div>
+          <div class="seat seat-sb" data-seat="SB">SB</div>
+          <div class="seat seat-bb" data-seat="BB">BB</div>
+          <div class="table-center">
+            <span class="table-title" id="modeLabel">Open Raise</span>
+            <strong id="positionLabel">UTG</strong>
+            <p id="tableHint">Hero em decisao</p>
+          </div>
+        </div>
+
+        <section class="panel trainer-card">
+          <div class="trainer-topline">
+            <span class="topline-pill" id="handGroupLabel">Premium</span>
+            <div class="trainer-meta-actions">
+              <span class="topline-pill subtle" id="handHint">Escolha a melhor acao.</span>
+              <button class="help-trigger" id="helpButton" type="button" aria-label="Entender as opcoes desta jogada">
+                ?
+              </button>
+            </div>
+          </div>
+
+          <div class="hand-area">
+            <div class="card" id="cardOne">AS</div>
+            <div class="card" id="cardTwo">KS</div>
+          </div>
+
+          <div class="hand-code" id="handCode">AKs</div>
+
+          <div class="action-note" id="actionNote">
+            Sua resposta vale para a linha principal desse spot.
+          </div>
+
+          <div class="actions">
+            <button data-action="raise" id="raiseButton">Raise</button>
+            <button data-action="call" id="callButton">Call</button>
+            <button data-action="fold" id="foldButton">Fold</button>
+          </div>
+
+          <div class="feedback" id="feedback">
+            Clique em uma acao para receber o feedback.
+          </div>
+
+          <div class="feedback-actions" id="feedbackActions">
+            <button class="secondary" id="showRangeButton" type="button">
+              Consultar leque do spot
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <section class="stats-grid">
+        <section class="panel">
+          <h2>Sessao</h2>
+          <div class="stats-list">
+            <div><span>Acertos</span><strong id="correctCount">0</strong></div>
+            <div><span>Total</span><strong id="totalCount">0</strong></div>
+            <div><span>Precisao</span><strong id="accuracyValue">0%</strong></div>
+            <div><span>% maos jogadas</span><strong id="vpipValue">0%</strong></div>
+            <div><span>Streak</span><strong id="streakValue">0</strong></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Por modo</h2>
+          <div class="mode-stats" id="modeStats"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Teclado</h2>
+          <ul class="shortcut-list">
+            <li><strong>R</strong> primeira acao</li>
+            <li><strong>C</strong> segunda acao</li>
+            <li><strong>F</strong> fold</li>
+            <li><strong>N</strong> nova mao</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="panel notes-card">
+        <div class="notes-header">
+          <div>
+            <h2>Revisao dos erros</h2>
+            <p class="review-copy">
+              Os erros ficam separados pela quantidade de jogadores na mesa para
+              voce enxergar melhor seus leaks em 6-max e 9-max.
+            </p>
+          </div>
+          <span class="review-badge" id="mistakeCountBadge">0 leaks</span>
+        </div>
+        <div class="mistake-list" id="mistakeList">
+          <p class="empty-state">Nenhum erro registrado ainda.</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="help-modal hidden" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <div class="help-backdrop" id="helpBackdrop"></div>
+      <section class="help-dialog">
+        <div class="help-dialog-header">
+          <div>
+            <span class="label">Ajuda rapida</span>
+            <h2 id="helpTitle">Como ler suas opcoes</h2>
+          </div>
+          <button class="help-close" id="helpCloseButton" type="button" aria-label="Fechar ajuda">
+            Fechar
+          </button>
+        </div>
+
+        <p class="help-copy" id="helpSummary">
+          Veja o que cada acao representa neste spot antes de responder.
+        </p>
+
+        <div class="help-grid" id="helpGrid"></div>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3256 @@
+{
+  "formats": {
+    "6": {
+      "label": "6-max",
+      "seats": [
+        "UTG",
+        "HJ",
+        "CO",
+        "BTN",
+        "SB",
+        "BB"
+      ],
+      "positions": [
+        "UTG",
+        "HJ",
+        "CO",
+        "BTN",
+        "SB",
+        "BB"
+      ],
+      "stackProfiles": {
+        "SHORT": {
+          "label": "20-40bb",
+          "description": "Short stack",
+          "modes": {
+            "OPEN": {
+              "spots": [
+                {
+                  "id": "OPEN_6_UTG",
+                  "hero": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_6_HJ",
+                  "hero": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "AKo",
+                      "AQo",
+                      "KQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_6_CO",
+                  "hero": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "KQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_6_BTN",
+                  "hero": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_6_SB",
+                  "hero": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo"
+                    ],
+                    "call": []
+                  }
+                }
+              ]
+            },
+            "VS_RAISE": {
+              "spots": [
+                {
+                  "id": "RFI_6_UTG_HJ",
+                  "hero": "HJ",
+                  "villain": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_HJ_CO",
+                  "hero": "CO",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "ATs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_CO_BTN",
+                  "hero": "BTN",
+                  "villain": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": [
+                      "88",
+                      "77",
+                      "66",
+                      "A9s",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AJo",
+                      "KQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_BTN_BB",
+                  "hero": "BB",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A5s",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": [
+                      "77",
+                      "66",
+                      "55",
+                      "A9s",
+                      "A8s",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "KQo"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_3BET": {
+              "spots": [
+                {
+                  "id": "3BET_6_UTG_HJ",
+                  "hero": "UTG",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "AKs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "JJ",
+                      "TT",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_6_CO_BTN",
+                  "hero": "CO",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_6_BTN_SB",
+                  "hero": "BTN",
+                  "villain": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "STANDARD": {
+          "label": "80-120bb",
+          "description": "100bb padrao",
+          "modes": {
+            "OPEN": {
+              "spots": [
+                {
+                  "id": "OPEN_6_UTG",
+                  "hero": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_6_HJ",
+                  "hero": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "KQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_6_CO",
+                  "hero": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo"
+                    ],
+                    "call": [
+                      "44",
+                      "33",
+                      "22",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "A5s",
+                      "A4s"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_6_BTN",
+                  "hero": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo",
+                      "JTo"
+                    ],
+                    "call": [
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "43s",
+                      "A8o",
+                      "KTo",
+                      "QTo"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_6_SB",
+                  "hero": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo",
+                      "JTo"
+                    ],
+                    "call": [
+                      "T8s",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "KTo",
+                      "QTo",
+                      "J9o"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_RAISE": {
+              "spots": [
+                {
+                  "id": "RFI_6_UTG_HJ",
+                  "hero": "HJ",
+                  "villain": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_HJ_CO",
+                  "hero": "CO",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "ATs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_CO_BTN",
+                  "hero": "BTN",
+                  "villain": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": [
+                      "88",
+                      "77",
+                      "66",
+                      "A9s",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AJo",
+                      "KQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_BTN_BB",
+                  "hero": "BB",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A5s",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": [
+                      "77",
+                      "66",
+                      "55",
+                      "A9s",
+                      "A8s",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "KQo"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_3BET": {
+              "spots": [
+                {
+                  "id": "3BET_6_UTG_HJ",
+                  "hero": "UTG",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "AKs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "JJ",
+                      "TT",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_6_CO_BTN",
+                  "hero": "CO",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_6_BTN_SB",
+                  "hero": "BTN",
+                  "villain": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DEEP": {
+          "label": "150bb+",
+          "description": "Deep stack",
+          "modes": {
+            "OPEN": {
+              "spots": [
+                {
+                  "id": "OPEN_6_UTG",
+                  "hero": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "AKo",
+                      "AQo",
+                      "77",
+                      "A9s",
+                      "KTs",
+                      "AJo"
+                    ],
+                    "call": [
+                      "66",
+                      "A8s",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "KQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_6_HJ",
+                  "hero": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "KQo",
+                      "66",
+                      "55",
+                      "A8s",
+                      "K9s",
+                      "QTs",
+                      "98s",
+                      "87s",
+                      "ATo",
+                      "QJo"
+                    ],
+                    "call": [
+                      "44",
+                      "33",
+                      "22",
+                      "A5s",
+                      "A4s",
+                      "76s",
+                      "65s"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_6_CO",
+                  "hero": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo",
+                      "44",
+                      "33",
+                      "22",
+                      "A7s",
+                      "A6s",
+                      "K9s",
+                      "J9s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "A9o",
+                      "QJo",
+                      "JTo"
+                    ],
+                    "call": [
+                      "A5s",
+                      "A4s",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "43s",
+                      "A3s",
+                      "A2s",
+                      "KTo",
+                      "QTo"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_6_BTN",
+                  "hero": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo",
+                      "JTo",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "43s",
+                      "A8o",
+                      "KTo",
+                      "QTo"
+                    ],
+                    "call": [
+                      "96s",
+                      "85s",
+                      "74s",
+                      "63s",
+                      "52s",
+                      "K9o",
+                      "Q9o",
+                      "J9o"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_6_SB",
+                  "hero": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo",
+                      "JTo",
+                      "T8s",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "KTo",
+                      "QTo",
+                      "J9o"
+                    ],
+                    "call": [
+                      "96s",
+                      "85s",
+                      "74s",
+                      "63s",
+                      "52s",
+                      "K9o",
+                      "Q9o"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_RAISE": {
+              "spots": [
+                {
+                  "id": "RFI_6_UTG_HJ",
+                  "hero": "HJ",
+                  "villain": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_HJ_CO",
+                  "hero": "CO",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "ATs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_CO_BTN",
+                  "hero": "BTN",
+                  "villain": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": [
+                      "88",
+                      "77",
+                      "66",
+                      "A9s",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AJo",
+                      "KQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_6_BTN_BB",
+                  "hero": "BB",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A5s",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": [
+                      "77",
+                      "66",
+                      "55",
+                      "A9s",
+                      "A8s",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "KQo"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_3BET": {
+              "spots": [
+                {
+                  "id": "3BET_6_UTG_HJ",
+                  "hero": "UTG",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "AKs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "JJ",
+                      "TT",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_6_CO_BTN",
+                  "hero": "CO",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_6_BTN_SB",
+                  "hero": "BTN",
+                  "villain": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "9": {
+      "label": "9-max",
+      "seats": [
+        "UTG",
+        "UTG1",
+        "MP",
+        "LJ",
+        "HJ",
+        "CO",
+        "BTN",
+        "SB",
+        "BB"
+      ],
+      "positions": [
+        "UTG",
+        "UTG1",
+        "MP",
+        "LJ",
+        "HJ",
+        "CO",
+        "BTN",
+        "SB",
+        "BB"
+      ],
+      "stackProfiles": {
+        "SHORT": {
+          "label": "20-40bb",
+          "description": "Short stack",
+          "modes": {
+            "OPEN": {
+              "spots": [
+                {
+                  "id": "OPEN_9_UTG",
+                  "hero": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_UTG1",
+                  "hero": "UTG1",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_MP",
+                  "hero": "MP",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_LJ",
+                  "hero": "LJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "KQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_HJ",
+                  "hero": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_CO",
+                  "hero": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "KQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_BTN",
+                  "hero": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_SB",
+                  "hero": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo"
+                    ],
+                    "call": []
+                  }
+                }
+              ]
+            },
+            "VS_RAISE": {
+              "spots": [
+                {
+                  "id": "RFI_9_UTG1_HJ",
+                  "hero": "HJ",
+                  "villain": "UTG1",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_MP_CO",
+                  "hero": "CO",
+                  "villain": "MP",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "ATs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_LJ_BTN",
+                  "hero": "BTN",
+                  "villain": "LJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": [
+                      "88",
+                      "77",
+                      "66",
+                      "A9s",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AJo",
+                      "KQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_BTN_BB",
+                  "hero": "BB",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A5s",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": [
+                      "77",
+                      "66",
+                      "55",
+                      "A9s",
+                      "A8s",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "KQo"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_3BET": {
+              "spots": [
+                {
+                  "id": "3BET_9_UTG_HJ",
+                  "hero": "UTG",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "AKs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "JJ",
+                      "TT",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_LJ_CO",
+                  "hero": "LJ",
+                  "villain": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_CO_BTN",
+                  "hero": "CO",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_BTN_SB",
+                  "hero": "BTN",
+                  "villain": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "STANDARD": {
+          "label": "80-120bb",
+          "description": "100bb padrao",
+          "modes": {
+            "OPEN": {
+              "spots": [
+                {
+                  "id": "OPEN_9_UTG",
+                  "hero": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_UTG1",
+                  "hero": "UTG1",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_MP",
+                  "hero": "MP",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_LJ",
+                  "hero": "LJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "KQo"
+                    ],
+                    "call": []
+                  }
+                },
+                {
+                  "id": "OPEN_9_HJ",
+                  "hero": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo"
+                    ],
+                    "call": [
+                      "44",
+                      "33",
+                      "22"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_CO",
+                  "hero": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo"
+                    ],
+                    "call": [
+                      "33",
+                      "22",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "A5s",
+                      "A4s"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_BTN",
+                  "hero": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo",
+                      "JTo"
+                    ],
+                    "call": [
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "43s",
+                      "A8o",
+                      "KTo",
+                      "QTo"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_SB",
+                  "hero": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo"
+                    ],
+                    "call": [
+                      "T8s",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "KTo",
+                      "QTo",
+                      "J9o"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_RAISE": {
+              "spots": [
+                {
+                  "id": "RFI_9_UTG1_HJ",
+                  "hero": "HJ",
+                  "villain": "UTG1",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_MP_CO",
+                  "hero": "CO",
+                  "villain": "MP",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "ATs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_LJ_BTN",
+                  "hero": "BTN",
+                  "villain": "LJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": [
+                      "88",
+                      "77",
+                      "66",
+                      "A9s",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AJo",
+                      "KQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_BTN_BB",
+                  "hero": "BB",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A5s",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": [
+                      "77",
+                      "66",
+                      "55",
+                      "A9s",
+                      "A8s",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "KQo"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_3BET": {
+              "spots": [
+                {
+                  "id": "3BET_9_UTG_HJ",
+                  "hero": "UTG",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "AKs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "JJ",
+                      "TT",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_LJ_CO",
+                  "hero": "LJ",
+                  "villain": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_CO_BTN",
+                  "hero": "CO",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_BTN_SB",
+                  "hero": "BTN",
+                  "villain": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DEEP": {
+          "label": "150bb+",
+          "description": "Deep stack",
+          "modes": {
+            "OPEN": {
+              "spots": [
+                {
+                  "id": "OPEN_9_UTG",
+                  "hero": "UTG",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo",
+                      "AQo",
+                      "88",
+                      "ATs",
+                      "KJs"
+                    ],
+                    "call": [
+                      "77",
+                      "A5s",
+                      "QJs"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_UTG1",
+                  "hero": "UTG1",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "77",
+                      "A9s",
+                      "KTs"
+                    ],
+                    "call": [
+                      "66",
+                      "A5s",
+                      "QJs",
+                      "JTs"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_MP",
+                  "hero": "MP",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "66",
+                      "A9s",
+                      "QTs",
+                      "JTs",
+                      "KQo"
+                    ],
+                    "call": [
+                      "55",
+                      "A5s",
+                      "T9s",
+                      "98s"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_LJ",
+                  "hero": "LJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "KQs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "KQo",
+                      "55",
+                      "A8s",
+                      "KTs",
+                      "QTs",
+                      "98s",
+                      "ATo"
+                    ],
+                    "call": [
+                      "44",
+                      "33",
+                      "22",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "A5s",
+                      "A4s"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_HJ",
+                  "hero": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "44",
+                      "33",
+                      "22",
+                      "A7s",
+                      "A6s",
+                      "K9s",
+                      "J9s",
+                      "87s",
+                      "76s",
+                      "KJo"
+                    ],
+                    "call": [
+                      "65s",
+                      "54s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "Q9o"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_CO",
+                  "hero": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "QJs",
+                      "QTs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "KQo",
+                      "KJo",
+                      "33",
+                      "22",
+                      "A6s",
+                      "K9s",
+                      "Q9s",
+                      "J9s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "QJo"
+                    ],
+                    "call": [
+                      "A5s",
+                      "A4s",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "43s",
+                      "A3s",
+                      "A2s",
+                      "QTo"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_BTN",
+                  "hero": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo",
+                      "JTo",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "43s",
+                      "A8o",
+                      "KTo",
+                      "QTo"
+                    ],
+                    "call": [
+                      "96s",
+                      "85s",
+                      "74s",
+                      "63s",
+                      "52s",
+                      "K9o",
+                      "Q9o",
+                      "J9o"
+                    ]
+                  }
+                },
+                {
+                  "id": "OPEN_9_SB",
+                  "hero": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "77",
+                      "66",
+                      "55",
+                      "44",
+                      "33",
+                      "22",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A9s",
+                      "A8s",
+                      "A7s",
+                      "A6s",
+                      "A5s",
+                      "A4s",
+                      "A3s",
+                      "A2s",
+                      "KQs",
+                      "KJs",
+                      "KTs",
+                      "K9s",
+                      "QJs",
+                      "QTs",
+                      "Q9s",
+                      "JTs",
+                      "J9s",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "76s",
+                      "65s",
+                      "54s",
+                      "AKo",
+                      "AQo",
+                      "AJo",
+                      "ATo",
+                      "A9o",
+                      "KQo",
+                      "KJo",
+                      "QJo",
+                      "T8s",
+                      "97s",
+                      "86s",
+                      "75s",
+                      "64s",
+                      "53s",
+                      "KTo",
+                      "QTo",
+                      "J9o"
+                    ],
+                    "call": [
+                      "96s",
+                      "85s",
+                      "74s",
+                      "63s",
+                      "52s",
+                      "K9o",
+                      "Q9o"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_RAISE": {
+              "spots": [
+                {
+                  "id": "RFI_9_UTG1_HJ",
+                  "hero": "HJ",
+                  "villain": "UTG1",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_MP_CO",
+                  "hero": "CO",
+                  "villain": "MP",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "ATs",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_LJ_BTN",
+                  "hero": "BTN",
+                  "villain": "LJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "AKo",
+                      "AQo"
+                    ],
+                    "call": [
+                      "88",
+                      "77",
+                      "66",
+                      "A9s",
+                      "KJs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "AJo",
+                      "KQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "RFI_9_BTN_BB",
+                  "hero": "BB",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "99",
+                      "88",
+                      "AKs",
+                      "AQs",
+                      "AJs",
+                      "ATs",
+                      "A5s",
+                      "KQs",
+                      "KJs",
+                      "AKo",
+                      "AQo",
+                      "AJo"
+                    ],
+                    "call": [
+                      "77",
+                      "66",
+                      "55",
+                      "A9s",
+                      "A8s",
+                      "KTs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "98s",
+                      "87s",
+                      "KQo"
+                    ]
+                  }
+                }
+              ]
+            },
+            "VS_3BET": {
+              "spots": [
+                {
+                  "id": "3BET_9_UTG_HJ",
+                  "hero": "UTG",
+                  "villain": "HJ",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "AKs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "JJ",
+                      "TT",
+                      "AQs",
+                      "AJs",
+                      "KQs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_LJ_CO",
+                  "hero": "LJ",
+                  "villain": "CO",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "AQo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_CO_BTN",
+                  "hero": "CO",
+                  "villain": "BTN",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "TT",
+                      "99",
+                      "88",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                },
+                {
+                  "id": "3BET_9_BTN_SB",
+                  "hero": "BTN",
+                  "villain": "SB",
+                  "actions": {
+                    "raise": [
+                      "AA",
+                      "KK",
+                      "QQ",
+                      "JJ",
+                      "TT",
+                      "AKs",
+                      "AQs",
+                      "A5s",
+                      "AKo"
+                    ],
+                    "call": [
+                      "99",
+                      "88",
+                      "77",
+                      "AJs",
+                      "ATs",
+                      "KQs",
+                      "QJs",
+                      "JTs",
+                      "T9s",
+                      "AQo",
+                      "AJo"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "stackProfiles": {
+    "SHORT": {
+      "label": "20-40bb",
+      "description": "Short stack"
+    },
+    "STANDARD": {
+      "label": "80-120bb",
+      "description": "100bb padrao"
+    },
+    "DEEP": {
+      "label": "150bb+",
+      "description": "Deep stack"
+    }
+  }
+}

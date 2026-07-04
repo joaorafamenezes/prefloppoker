@@ -1,0 +1,16 @@
+{
+  "name": "preflop-trainer",
+  "version": "1.0.0",
+  "description": "Treinador simples de pre-flop em Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "poker",
+    "preflop",
+    "nodejs",
+    "trainer"
+  ],
+  "license": "MIT"
+}
