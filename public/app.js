@@ -501,9 +501,10 @@ function openRangeWindow(scenario) {
 }
 
 function renderPositionOptions() {
-  const format = getCurrentFormat();
+  const spots = getSpotsForMode(state.filters.tableSize, state.filters.stackProfile, state.filters.mode);
   const previousValue = state.filters.position;
-  const validOptions = ["ALL", ...format.positions];
+  const positions = [...new Set(spots.map((spot) => spot.hero))];
+  const validOptions = ["ALL", ...positions];
 
   positionFilter.innerHTML = "";
 
@@ -512,7 +513,7 @@ function renderPositionOptions() {
   allOption.textContent = "Todas";
   positionFilter.appendChild(allOption);
 
-  format.positions.forEach((position) => {
+  positions.forEach((position) => {
     const option = document.createElement("option");
     option.value = position;
     option.textContent = getPositionLabel(position);
@@ -578,8 +579,31 @@ function renderScenario() {
   const scenario = getRandomScenario();
 
   if (!scenario) {
+    state.currentScenario = null;
+    state.answered = false;
+    heroModeBadge.textContent = `${tableSizeLabels[state.filters.tableSize]} ${getStackProfileMeta(state.filters.stackProfile).label}`;
+    modeLabel.textContent = modeLabels[state.filters.mode];
+    tableSizeLabel.textContent = tableSizeLabels[state.filters.tableSize];
+    stackProfileLabel.textContent = getStackProfileMeta(state.filters.stackProfile).label;
+    positionLabel.textContent = state.filters.position === "ALL" ? "-" : getPositionLabel(state.filters.position);
+    tableHint.textContent = "Ajuste os filtros";
+    spotTitle.textContent = "Nenhum spot disponivel";
+    villainLabel.textContent = "Sem spot para os filtros";
+    actionLegend.textContent = actionLabels[state.filters.mode]
+      ? `${actionLabels[state.filters.mode].raise} / ${actionLabels[state.filters.mode].call} / ${actionLabels[state.filters.mode].fold}`
+      : "Raise / Call / Fold";
+    cardOne.textContent = "A♠";
+    cardTwo.textContent = "K♠";
+    cardOne.classList.remove("red");
+    cardTwo.classList.remove("red");
+    handCode.textContent = "--";
+    handGroupLabel.textContent = "Sem spot";
+    handHint.textContent = "Escolha filtros compatíveis para gerar uma nova mao.";
+    actionNote.textContent = "Quando houver um spot valido, a mao sera sorteada normalmente.";
     feedback.textContent = "Nao encontrei um spot para esses filtros. Ajuste a mesa, o modo ou o grupo de maos.";
     feedback.className = "feedback bad";
+    updateSeatVisibility(state.filters.tableSize);
+    updateSeatHighlights(state.filters.tableSize, null, null);
     return;
   }
 
@@ -838,6 +862,7 @@ function bindEvents() {
 
   modeFilter.addEventListener("change", () => {
     state.filters.mode = modeFilter.value;
+    renderPositionOptions();
     saveState();
     renderStats();
     renderScenario();
@@ -845,6 +870,7 @@ function bindEvents() {
 
   stackProfileFilter.addEventListener("change", () => {
     state.filters.stackProfile = stackProfileFilter.value;
+    renderPositionOptions();
     saveState();
     renderStats();
     renderScenario();
