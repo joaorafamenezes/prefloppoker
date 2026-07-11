@@ -38,8 +38,7 @@ const state = {
   filters: {
     tableSize: "6",
     stackProfile: "STANDARD",
-    mode: "OPEN",
-    position: "BTN"
+    mode: "OPEN"
   }
 };
 
@@ -78,11 +77,6 @@ function getStackProfileMeta(stackProfile) {
 
 function getSpotsForMode(tableSize, stackProfile, mode) {
   return state.ranges.formats[tableSize].stackProfiles[stackProfile].modes[mode].spots;
-}
-
-function getAvailableHeroPositions(tableSize, stackProfile, mode) {
-  const positions = getSpotsForMode(tableSize, stackProfile, mode).map((spot) => spot.hero);
-  return [...new Set(positions)];
 }
 
 function getRecommendedAction(mode, spot, handCode) {
@@ -170,32 +164,17 @@ function pickSpot(tableSize, stackProfile, mode, heroPreference, villainPreferen
   return spots[0] || null;
 }
 
-function syncValidPosition() {
-  const availablePositions = getAvailableHeroPositions(
-    state.filters.tableSize,
-    state.filters.stackProfile,
-    state.filters.mode
-  );
-
-  if (!availablePositions.includes(state.filters.position)) {
-    state.filters.position = availablePositions[0] || state.baseScenario.hero;
-  }
-
-  return availablePositions;
-}
-
 function renderEmpty(message) {
   root.innerHTML = `<p class="empty-state">${escapeHtml(message)}</p>`;
 }
 
 function renderRangeView() {
   const baseScenario = state.baseScenario;
-  const availablePositions = syncValidPosition();
   const spot = pickSpot(
     state.filters.tableSize,
     state.filters.stackProfile,
     state.filters.mode,
-    state.filters.position,
+    baseScenario.hero,
     baseScenario.villain
   );
 
@@ -270,15 +249,6 @@ function renderRangeView() {
           <option value="VS_3BET" ${scenario.mode === "VS_3BET" ? "selected" : ""}>Vs 3-Bet</option>
         </select>
       </label>
-
-      <label class="filter-field">
-        <span>Posicao</span>
-        <select id="positionSelect">
-          ${availablePositions.map((position) => `
-            <option value="${escapeHtml(position)}" ${scenario.hero === position ? "selected" : ""}>${escapeHtml(getPositionLabel(position))}</option>
-          `).join("")}
-        </select>
-      </label>
     </section>
 
     <section class="legend">
@@ -303,7 +273,6 @@ function renderRangeView() {
   const tableSizeSelect = document.getElementById("tableSizeSelect");
   const stackProfileSelect = document.getElementById("stackProfileSelect");
   const modeSelect = document.getElementById("modeSelect");
-  const positionSelect = document.getElementById("positionSelect");
   const closeButton = document.getElementById("closeRangeViewButton");
 
   tableSizeSelect.addEventListener("change", () => {
@@ -318,11 +287,6 @@ function renderRangeView() {
 
   modeSelect.addEventListener("change", () => {
     state.filters.mode = modeSelect.value;
-    renderRangeView();
-  });
-
-  positionSelect.addEventListener("change", () => {
-    state.filters.position = positionSelect.value;
     renderRangeView();
   });
 
@@ -342,7 +306,6 @@ async function init() {
   state.filters.tableSize = state.baseScenario.tableSize;
   state.filters.stackProfile = state.baseScenario.stackProfile || "STANDARD";
   state.filters.mode = state.baseScenario.mode;
-  state.filters.position = state.baseScenario.hero;
 
   const response = await fetch("./ranges.json");
   state.ranges = await response.json();
